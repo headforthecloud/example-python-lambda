@@ -1,0 +1,8 @@
+# python ignores
+.pytest_cache
+.coverage
+tests/testresults
+
+
+# vscode
+.vscode
