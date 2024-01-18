@@ -1,8 +1,12 @@
-import pytest
-from lambda_function import *
+#! /usr/bin/env python
+""" Test lambda_handler """
+
 import json
+from lambda_function import lambda_handler
+
 
 def test_lambda_handler():
+    """ Test the main function returns 200 """
     event = {
         "test": "test"
     }

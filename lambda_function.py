@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+""" An example lambda function """
 
 import os
 import json
@@ -11,8 +12,8 @@ logger = logging.getLogger()
 logger.setLevel(os.getenv('LOG_LEVEL', 'INFO'))
 
 
-# define a lambda_handler function that takes in an event and a context
 def lambda_handler(event, context):
+    """ define a lambda_handler function that takes in an event and a context """
     logger.info("Hello from Lambda!")
 
     return {
@@ -21,13 +22,13 @@ def lambda_handler(event, context):
     }
 
 
-# This is a simple function that adds two numbers together and returns the result.
 def add_x_y(x, y):
+    """ This is a simple function that adds two numbers together and returns the result. """
     return x + y
 
 
-# This is a simple function that multiplies two numbers together and returns the result.
 def multiply_x_y(x, y):
+    """ This is a simple function that multiplies two numbers together and returns the result. """
     return x * y
 
 
